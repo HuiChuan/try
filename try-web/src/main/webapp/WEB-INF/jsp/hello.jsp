@@ -1,6 +1,6 @@
 <%@ page isELIgnored="false" %>
 <html>
 <body>
-<h2>${val}</h2>
+<h2>${name} say: ${hello.msg}</h2>
 </body>
 </html>

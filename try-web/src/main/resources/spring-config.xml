@@ -8,9 +8,11 @@
         <property name="locations">
             <list>
                 <value>classpath:properties/common.properties</value>
+                <value>classpath:properties/db.properties</value>
             </list>
         </property>
     </bean>
 
     <import resource="classpath:spring/service.xml"/>
+    <import resource="classpath:spring/datasource.xml"/>
 </beans>

@@ -25,7 +25,7 @@ public class HelloController {
     }
 
     @ResponseBody
-    @RequestMapping("/save")
+    @RequestMapping(path = "/save", produces = "text/html;charset=UTF-8")
     public String hello(@RequestParam(value="name",required=true) String name, @RequestParam(value="msg",required=true) String msg){
         HelloBO helloBO = new HelloBO();
         helloBO.setName(name);

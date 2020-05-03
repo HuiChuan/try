@@ -16,6 +16,7 @@
         <module>try-manager</module>
         <module>try-dao</module>
         <module>try-worker</module>
+        <module>try-rpc</module>
     </modules>
 
     <properties>

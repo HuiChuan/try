@@ -13,6 +13,7 @@
         </property>
     </bean>
 
-    <import resource="classpath:spring/service.xml"/>
-    <import resource="classpath:spring/datasource.xml"/>
+    <import resource="classpath:spring/spring-config-service.xml"/>
+    <import resource="classpath:spring/spring-config-datasource.xml"/>
+    <import resource="classpath:spring/spring-config-worker.xml"/>
 </beans>

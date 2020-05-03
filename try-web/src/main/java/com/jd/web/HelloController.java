@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/mvc")
+@RequestMapping("/hello")
 public class HelloController {
 
     @Autowired
     HelloService helloService;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/say")
     public ModelAndView hello(@RequestParam("name") String name){
         ModelAndView mav=new ModelAndView("hello");
         mav.addObject("name", name);

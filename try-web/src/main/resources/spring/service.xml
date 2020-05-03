@@ -3,4 +3,20 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="workerService" class="com.jd.service.impl.WorkerServiceImpl"/>
+
+    <bean id="gatherContext" class="com.jd.worker.gather.GatherContext">
+        <property name="pageSize" value="10"/>
+        <property name="stop" value="false"/>
+        <property name="workerService" ref="workerService"/>
+    </bean>
+
+    <bean id="gatherWorker" class="com.jd.worker.gather.GatherWorker">
+        <constructor-arg index="0" value="${gatherWorker.threadPool.core}"/>
+        <constructor-arg index="1" value="${gatherWorker.threadPool.max}"/>
+        <constructor-arg index="2" value="${gatherWorker.threadPool.keepAlive}"/>
+        <constructor-arg index="3" value="${gatherWorker.threadPool.queueSize}"/>
+    </bean>
+
+    <bean id="indexWorker" class="com.jd.worker.index.IndexWorker"/>
 </beans>

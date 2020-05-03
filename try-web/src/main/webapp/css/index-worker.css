@@ -1,0 +1,40 @@
+
+#main {
+    width: 70%;
+    margin: 10 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+tr {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    background-color: #BFD0F9;
+}
+
+td {
+    border: 1px solid black;
+    background-color: #B3D9F9;
+}
+
+#prompt {
+    color: red;
+}
+
+.selectType {
+    width: 150px;
+}
+
+.idsText {
+    width: 450px;
+}
+
+.indexText {
+    width: 200px;
+}

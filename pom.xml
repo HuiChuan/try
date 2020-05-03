@@ -15,6 +15,7 @@
         <module>try-common</module>
         <module>try-manager</module>
         <module>try-dao</module>
+        <module>try-worker</module>
     </modules>
 
     <properties>

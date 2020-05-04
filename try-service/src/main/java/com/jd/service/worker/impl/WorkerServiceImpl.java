@@ -1,6 +1,6 @@
-package com.jd.service.impl;
+package com.jd.service.worker.impl;
 
-import com.jd.service.WorkerService;
+import com.jd.service.worker.WorkerService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Date;

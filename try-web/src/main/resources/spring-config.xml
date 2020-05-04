@@ -17,4 +17,5 @@
     <import resource="classpath:spring/spring-config-datasource.xml"/>
     <import resource="classpath:spring/spring-config-worker.xml"/>
     <import resource="classpath:spring/spring-config-provider.xml"/>
+    <import resource="classpath:spring/spring-config-cache.xml"/>
 </beans>

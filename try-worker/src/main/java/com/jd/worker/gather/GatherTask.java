@@ -1,6 +1,6 @@
 package com.jd.worker.gather;
 
-import com.jd.service.WorkerService;
+import com.jd.service.worker.WorkerService;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 

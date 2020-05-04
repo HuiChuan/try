@@ -1,4 +1,4 @@
-package com.jd.service;
+package com.jd.service.business;
 
 import com.jd.domain.bo.HelloBO;
 import com.jd.domain.vo.HelloVO;

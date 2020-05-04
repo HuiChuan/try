@@ -1,4 +1,4 @@
-package com.jd.manager;
+package com.jd.manager.business;
 
 import com.jd.domain.dto.HelloDTO;
 

@@ -1,6 +1,6 @@
 package com.jd.worker.gather;
 
-import com.jd.service.WorkerService;
+import com.jd.service.worker.WorkerService;
 import lombok.Data;
 
 import java.util.concurrent.atomic.AtomicInteger;

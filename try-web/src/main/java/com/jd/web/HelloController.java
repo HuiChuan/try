@@ -1,7 +1,7 @@
 package com.jd.web;
 
 import com.jd.domain.bo.HelloBO;
-import com.jd.service.HelloService;
+import com.jd.service.business.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

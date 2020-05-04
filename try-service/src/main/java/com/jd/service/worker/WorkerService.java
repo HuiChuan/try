@@ -1,4 +1,4 @@
-package com.jd.service;
+package com.jd.service.worker;
 
 import java.util.Date;
 

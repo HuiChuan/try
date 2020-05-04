@@ -1,12 +1,14 @@
-package com.jd.manager.impl;
+package com.jd.manager.business.impl;
 
 import com.jd.dao.HelloMapper;
 import com.jd.domain.dto.HelloDTO;
 import com.jd.entity.Hello;
-import com.jd.manager.HelloManager;
+import com.jd.manager.business.HelloManager;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class HelloManagerImpl implements HelloManager {
 
@@ -14,6 +16,8 @@ public class HelloManagerImpl implements HelloManager {
     HelloMapper helloDao;
 
     public HelloDTO getHelloByName(String name){
+        log.info("HelloDTO get from db! name=" + name);
+
         Hello hello = helloDao.selectHelloByName(name);
         if (null==hello) {
             return null;
